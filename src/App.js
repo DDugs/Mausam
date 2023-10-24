@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import CurrentLocation from "./currentLocation";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <div className="container">
+        <CurrentLocation />
+      </div>
+      <div className="footer-info">
+        Weather App by Dhruv Gupta{" "}<br></br>
+        <a target="_blank" href="https://github.com/DDugs">
+            Github
+        </a>{" "}
+        <a target="_blank" href="https://www.linkedin.com/in/dhruv-vishesh-gupta-a98a84271/">
+            | LinkedIn
+        </a>{" "}
+      </div>
+    </React.Fragment>
   );
 }
 
